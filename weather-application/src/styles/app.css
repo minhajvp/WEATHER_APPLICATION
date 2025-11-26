@@ -1,0 +1,100 @@
+.root{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle at top, #7dd3fc 0, #0f172a 55%);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",sans-serif;
+}
+.glass-container {
+  width: 95%;
+  max-width: 480px;
+  padding: 2.5rem 2rem;
+  border-radius: 24px;
+  background: rgba(15, 23, 42, 0.65);
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  color: #e5e7eb;
+  text-align: center;
+}
+.app-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #f9fafb;
+  margin-bottom: 0.25rem;
+}
+
+.city-input {
+  flex: 1;
+  padding: 0.7rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.5);
+  background: rgba(15, 23, 42, 0.7);
+  color: #e5e7eb;
+  outline: none;
+  font-size: 0.95rem;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+  margin-right: 2%;
+}
+
+.city-input::placeholder {
+  color: #6b7280;
+}
+
+.city-input:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 1px rgba(56, 189, 248, 0.7);
+}
+
+.city-input:hover{
+     border-color: #38bdf8;
+     box-shadow: 0 0 0 1px rgba(56, 189, 248, 0.7);
+}
+
+.search-button {
+  padding: 0.7rem 1.2rem;
+  border-radius: 999px;
+  border: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  color: #0b1120;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+  white-space: nowrap;
+}
+.search-button:hover{
+    transform: scale(1.03);
+}
+.search-button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.search-button:disabled {
+  background-color: #aed6ec;
+  cursor: not-allowed;
+  opacity: 0.6;       
+  border-color: #999;
+}
+.info-text {
+  font-size: 0.85rem;
+  color: #93c5fd;
+  margin-bottom: 0.5rem;
+}
+
+.error-text {
+  font-size: 0.85rem;
+  color: #fecaca;
+  margin-bottom: 0.5rem;
+}
+.loader{
+    display: flex;
+  justify-content: center; 
+  align-items: center;      
+  height: auto;  
+  margin-top: 2%;
+}
